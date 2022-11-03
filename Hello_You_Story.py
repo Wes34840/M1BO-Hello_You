@@ -24,6 +24,9 @@ def intro():
         run()
     elif ans.lower().startswith("c"):
         fight()
+    else:
+        print("You couldn't make your mind up")
+        end_die()
 
 def run():
     type("You run and meet a group of mercenaries who ask what you're running from, you tell them the story. They offer to help when the goblins come back. ")
@@ -79,13 +82,13 @@ def fightcapture():
     end_locked_up()
 
 def runcapture():
-        type("You run until you cannot see the group following you.")
-        type("A. Keep Running     B. Hide In Bushes And Wait")
-        ans = input("> ")
-        if ans.lower().startswith("a"):
-            end_lost()
-        else:
-            hide()
+    type("You run until you cannot see the group following you.")
+    type("A. Keep Running     B. Hide In Bushes And Wait")
+    ans = input("> ")
+    if ans.lower().startswith("a"):
+        end_lost()
+    else:
+        hide()
 
 
 def hide():
@@ -93,7 +96,7 @@ def hide():
     end_locked_up()
 
 def capture():
-    type("while they take you away you pass out")
+    type("While they take you away you pass out")
     end_locked_up()
 
 def end_die():
