@@ -16,7 +16,7 @@ def typeslow(str):
 
 def intro():
     type("A group of goblins try to kill you, what do you do?")
-    type("A. Accept your fate     B. Run     3. Fight them off")
+    type("A. Accept your fate     B. Run     C. Fight them off ")
     ans = input("> ")
     if ans.lower().startswith("a"):
         end_die()
